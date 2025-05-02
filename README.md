@@ -7,6 +7,10 @@ My main motiviation for creating this package was custom field support.  I have 
 Emacs Jira clients, and [jira-cli](https://github.com/ankitpokhrel/jira-cli), but none of them had
 the support for custom fields I needed.
 
+![screenshot](./screenshot.png) 
+
+The top window is the `query` window, and the bottom window is the `context` window.
+
 ## WIP
 
 This project is not well documented, there are _many_ features missing, and probably plenty of bugs.
@@ -42,9 +46,6 @@ A few words of warning:
 M-x eljira
 ```
 
-![screenshot](./screenshot.png) 
-
-The top window is the `query` window, and the bottom window is the `context` window.
 
 3. Press `h` for key binding help.
 
