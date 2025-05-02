@@ -3,6 +3,8 @@
 **eljira** is an Emacs package that provides an interface for interacting with Jira. It allows users
 to create, view, and edit issues.
 
+https://sawwheet.com/posts/eljira-announcement/
+
 My main motiviation for creating this package was custom field support.  I have tried many other
 Emacs Jira clients, and [jira-cli](https://github.com/ankitpokhrel/jira-cli), but none of them had
 the support for custom fields I needed.
