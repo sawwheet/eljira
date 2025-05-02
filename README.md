@@ -19,9 +19,13 @@ A few words of warning:
 - If questions show up in the issues, I will do my best to help hack your way through it, as I have in my config.
 - This is my first lisp project. I was liberal in experimenting with different lisp concepts.
 
-# Configuration
+# Usage
 
-Before using **eljira**, you must set the following custom variables in your Emacs configuration:
+Usage of eljira is primarily done through **queries** and **contexts**
+
+## Quick Start
+
+1. Setup the required variables:
 
 ```emacs-lisp
 (defcustom eljira-token "your_jira_token"
@@ -34,31 +38,7 @@ Before using **eljira**, you must set the following custom variables in your Ema
   "The Jira base URL.")
 ```
 
-## Custom Fields
-
-If you want to edit customfields when creating and editing issues, you will want to modify the following variables:
-
-- eljira-customfields
-- eljira-static-customfields
-
-See the docstrings for more info.
-
-Here is an example:
-
-```emacs-lisp
-(setq eljira-customfields '((:name "Points" :key "p" :field "customfield_10000" :type integer)
-							(:name "Need by date" :key "d" :field "customfield_10001" :type date)))
-
-(setq eljira-static-customfields `(("customfield_10002" . (("value" . "FooBar"))))))
-```
-
-# Usage
-
-Usage of eljira is primarily done through **queries** and **contexts**
-
-## Quick Start
-
-After setting the required variables, run:
+2. Run:
 
 ```emacs-lisp
 M-x eljira
@@ -66,9 +46,13 @@ M-x eljira
 
 ![screenshot](./screenshot.png) 
 
-Press `h` for key binding help.
-
 The top window is the `query` window, and the bottom window is the `context` window.
+
+3. Press `h` for key binding help.
+
+4. See [Configuration](#Configuration) for more details
+
+# Configuration
 
 ## Queries
 
@@ -137,6 +121,24 @@ See the docstring for `eljira-queries` to understand how to configure this varia
     (:name "Comments" :field "comment" :hide t)
     (:name "Description" :field "description" :hide t))))
 
+```
+
+## Custom Fields
+
+If you want to edit customfields when creating and editing issues, you will want to modify the following variables:
+
+- eljira-customfields
+- eljira-static-customfields
+
+See the docstrings for more info.
+
+Here is an example:
+
+```emacs-lisp
+(setq eljira-customfields '((:name "Points" :key "p" :field "customfield_10000" :type integer)
+							(:name "Need by date" :key "d" :field "customfield_10001" :type date)))
+
+(setq eljira-static-customfields `(("customfield_10002" . (("value" . "FooBar"))))))
 ```
 
 ## Contexts
