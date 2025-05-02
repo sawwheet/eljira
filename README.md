@@ -21,8 +21,6 @@ A few words of warning:
 
 # Usage
 
-Usage of eljira is primarily done through **queries** and **contexts**
-
 ## Quick Start
 
 1. Setup the required variables:
