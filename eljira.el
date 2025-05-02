@@ -4,7 +4,7 @@
 ;; Version: 0.1.0
 ;; Package-Requires: (jiralib2 (ox-jira "0.1-SNAPSHOT") (transient "0.4.0") language-detection s)
 ;; Keywords: tooling, productivity
-;; URL: https://github.com/sawwheetpublic/eljira
+;; URL: https://github.com/sawwheet/eljira
 
 ;;; Commentary:
 
