@@ -341,7 +341,7 @@
 					(propertize "C-c C-k" 'face 'help-key-binding))
   "The header for the create issue buffer")
 
-(defun eljira--create-issue-cancel ()
+(defun eljira--create-issue-abort ()
   (set-window-configuration eljira--previous-window-config))
 
 (defun eljira--create-issue-confirm ()
