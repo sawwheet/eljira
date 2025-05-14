@@ -34,7 +34,7 @@
 	:group 'eljira)
 
 (defcustom eljira-queries '((:name "My Issues"
-																	 :jql "project = \"SRE\" AND assignee = currentUser() AND resolution = Unresolved ORDER BY created DESC"
+																	 :jql "resolution = Unresolved ORDER BY created DESC"
 																	 :fields ((:name "Key" :formatter (lambda (value) (propertize value 'face 'bold)))
 																						(:name "Type" :field "issuetype")
 																						(:name "Status" :field "status")
