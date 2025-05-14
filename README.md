@@ -25,6 +25,22 @@ A few words of warning:
 - If questions show up in the issues, I will do my best to help hack your way through it, as I have in my config.
 - This is my first lisp project. I was liberal in experimenting with different lisp concepts.
 
+# Installation
+
+I have not looked into putting this into Melpa or Elpa. You can install via git
+
+```emacs-lisp
+(use-package eljira
+  :ensure nil
+  :demand t
+  :load-path "~/src/eljira/"
+  :config
+  (setq  eljira-token "your_jira_token"
+				 eljira-username "your_jira_username"
+				 eljira-url "https://your-domain.atlassian.net"))
+```
+
+
 # Usage
 
 ## Quick Start
