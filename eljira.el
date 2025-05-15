@@ -437,7 +437,7 @@
      :always-read t)
     ("p" "Project" "--project="
      :class transient-option
-     :always-read
+     :always-read t
      :prompt "Project: ")
     ("a" "Assignee" "--assignee="
      :class transient-option
